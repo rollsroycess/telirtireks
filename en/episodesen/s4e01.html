@@ -124,22 +124,7 @@
     </nav>
 </section>
 
-<script>
- 
-        $.getJSON("bolum.json",function (data){
-                data.forEach(function(nesne,index){
- 
-                    let satir=$("<tr>") //<tr> elementi oluşturur
-                    let hucre3=$("<td>").text(nesne.Ad)
- 
-                    satir.append(hucre3)//hücre3 ü satir içine ekler
- 
-                    $("#liste").append(satir) //liste içine satir elementini ekler.
- 
-            })
-        })
- 
-    </script>
+
 
 <br><br><br><br>
 <p style="text-align:center;font-weight:bold;font-size:35px!important;" class="mbr-text mbr-fonts-style display-2">Miraculous Ladybug Truth English Dub</p>
@@ -158,6 +143,23 @@
 </div>
 
 <div id="liste"></div>
+
+<script>
+ 
+        $.getJSON("bolum.json",function (data){
+                data.forEach(function(nesne,index){
+ 
+                    let satir=$("<tr>") //<tr> elementi oluşturur
+                    let hucre3=$("<td>").text(nesne.Ad)
+ 
+                    satir.append(hucre3)//hücre3 ü satir içine ekler
+ 
+                    $("#liste").append(satir) //liste içine satir elementini ekler.
+ 
+            })
+        })
+ 
+    </script>
 
 <div id="welcomeDiv"  style="display:none;" class="answer_list">
 <br><br>
@@ -281,6 +283,7 @@ function showDiv() {
     </div>
 </section>
   <script src="../../assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="../../assets/popper/popper.min.js"></script>
   <script src="../../assets/tether/tether.min.js"></script>
   <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
