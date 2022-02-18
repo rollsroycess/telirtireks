@@ -124,6 +124,23 @@
     </nav>
 </section>
 
+<script>
+ 
+        $.getJSON("bolum.json",function (data){
+                data.forEach(function(nesne,index){
+ 
+                    let satir=$("<tr>") //<tr> elementi oluşturur
+                    let hucre3=$("<td>").text(nesne.401)
+ 
+                    satir.append(hucre3)//hücre3 ü satir içine ekler
+ 
+                    $("#liste").append(satir) //liste içine satir elementini ekler.
+ 
+            })
+        })
+ 
+    </script>
+
 <br><br><br><br>
 <p style="text-align:center;font-weight:bold;font-size:35px!important;" class="mbr-text mbr-fonts-style display-2">Miraculous Ladybug Truth English Dub</p>
 
@@ -136,7 +153,7 @@
   right: 0;
   width: 100%;
   height: auto;" controls="true" loop="true" class="" data-setup='{}'>
-  <source src="https://cfvod.kaltura.com/pd/p/4497703/sp/449770300/serveFlavor/entryId/1_8f1tki71/v/11/ev/7/flavorId/1_vfbf0s0e/fileName/401.mp4/name/a.mp4" type="video/mp4">
+  <source src="<div id="liste"></div>" type="video/mp4">
 </video>
 </div>
 
@@ -193,7 +210,7 @@ function showDiv() {
 <meta itemprop="author" content="Miraculous Ladybug">
 
 <div class="downloadnow">
-<div class="mbr-section-btn"><a id="buttona" class="btn btn-primary display-4" onclick="showDiv()">Show Description<a/><a class="btn btn-md btn-secondary display-4" href="https://cfvod.kaltura.com/pd/p/4497703/sp/449770300/serveFlavor/entryId/1_8f1tki71/v/11/ev/7/flavorId/1_vfbf0s0e/fileName/401.mp4/name/a.mp4">Download Episode</a></div></div>
+<div class="mbr-section-btn"><a id="buttona" class="btn btn-primary display-4" onclick="showDiv()">Show Description<a/><a class="btn btn-md btn-secondary display-4" href="<div id="liste"></div>">Download Episode</a></div></div>
 
 <section class="footer3 cid-rCxf0i4nTn" id="footer3-a">
 
